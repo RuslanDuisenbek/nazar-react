@@ -4,7 +4,6 @@ import ell2 from './../assets/ellps2.svg';
 import ell3 from './../assets/ellps3.svg';
 import searcher from './../assets/searcher.svg';
 import person from './../assets/image-of-young-brunette-asian-woman-smiling-and-ho-2021-08-30-02-13-34-utc 1.svg';
-import {useEffect, useState} from 'react'
 import Restaurants from './restaurants'
 import eng from './../assets/Ellipse 38.svg'
 import tur from './../assets/Ellipse 40.svg'
@@ -14,8 +13,6 @@ import rus from './../assets/Ellipse 39.svg'
 import russian from './../assets/Ellipse 36.svg'
 import english from './../assets/Ellipse 33.svg'
 import turkish from './../assets/Ellipse 34.svg'
-import { useNavigate } from 'react-router-dom'
-
 const items = {
   baked : {
     name: 'Англиский',
@@ -38,39 +35,6 @@ const items = {
     img : china
   }
 }
-// const navigate = useNavigate();
-// const handleCourseRus = ()=>{
-//   navigate('/course_rus')
-// }
-// const handleCourseEng = () =>{
-//   navigate('/course_eng')
-// }
-// const handleCourseTur = () =>{
-//   navigate('/course_tur')
-// }
-// const defaultBurgers = [
-//   {
-//     id: 1,
-//     name: 'Русский Язык',
-//     price: 'от 3170 тг/мес',
-//     img: russian,
-//     function: handleCourseRus
-//   },
-//   {
-//     id: 2,
-//     name: 'Англискийй Язык',
-//     price: 'от 3170 тг/мес',
-//     img: english,
-//     function : handleCourseEng
-//   },
-//   {
-//     id: 3,
-//     name: 'Турецкий Язык',
-//     price: 'от 3170 тг/мес',
-//     img: turkish,
-//     function : handleCourseTur
-//   }
-// ];
 export default function Feed({activePage, setActivePage}) {
 
   const handleCourseRus = ()=>{
@@ -109,7 +73,7 @@ export default function Feed({activePage, setActivePage}) {
     <div className='flex flex-col w-3/4 bg-gray-100 h-auto items-center '>
       <div className='flex flex-row w-[95%] mt-3 justify-between items-center '>
         <h3 className='font-poppins text-[190%] font-bold leading-[150%] text-[#2E2E2E]'>
-          Hello, ..........
+          Привет, ..........
         </h3>
         <div className="w-[25%] flex flex-row items-center  gap-[8px] rounded-[16px] bg-white">
           <img className=" text-[#F8B602]" src={searcher} alt="search"/>
@@ -120,26 +84,8 @@ export default function Feed({activePage, setActivePage}) {
           />
         </div>
       </div>
-      {activePage === 'restaurant' ? <Restaurants classname='w-[97%] h-[70%px]'/> :
-          <div className='bg-[#007AFF] w-[97%] h-[140px] rounded-[16px] mt-8 flex flex-row justify-around relative'>
-            <div>
-              <div className="justify-start font-poppins text-[32px] font-bold leading-[32px] text-left text-white">
-                <span className="block font-poppins text-[22px] font-bold text-white">Get Discount Voucher</span>
-                <span className="block font-poppins text-[22px] font-bold text-white">Up To 20%</span>
-              </div>
-              <div className="font-poppins text-[12px] font-normal leading-[22px] text-left text-[#FFFFFF]">
-            <span
-                className="block text-[#FFFFFF]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
-                <span className="block text-[#FFFFFF]">eiusmod tempor incididunt.</span>
-              </div>
-            </div>
+      <Restaurants classname='w-[97%] h-[70%px]'/>
 
-            <img src={person} className='w-[250px] h-[141px]' alt="person"/>
-            <img src={ell1} className='w-[85px] h-[85px] absolute bottom-0 left-0' alt="ellipse1"/>
-            <img src={ell3} className='w-[125px] h-[125px] absolute top-0 right-[155px]' alt="ellipse3"/>
-            <img src={ell2} className='w-[85px] h-[85px] absolute bottom-0 right-0' alt="ellipse2"/>
-
-          </div>}
 
 
       <div className='w-[85%]'>

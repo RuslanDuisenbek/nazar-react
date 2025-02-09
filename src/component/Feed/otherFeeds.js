@@ -2,7 +2,6 @@ import searcher from "../assets/searcher.svg";
 import OrderHistory from './orderHistory'
 import Settings from './Settings'
 import Bills from './Bills'
-import Profile from './profile'
 import CoursesRus from './CoursesRus'
 import CoursesEng from './CoursesEng'
 import CoursesTur from './CoursesTur'
@@ -11,7 +10,7 @@ export default function OtherFeeds({activePage,setActivePage}) {
       <div className={`flex flex-col w-3/4 bg-gray-100 h-full items-center gap-1`}>
           <div className='flex flex-row w-[95%] mt-3 justify-between items-center '>
               <h3 className='font-poppins text-[190%] font-bold leading-[150%] text-[#2E2E2E]'>
-                  Hello, ..........
+                  Привет, ..........
               </h3>
               <div className="w-[253px] h-[30px] flex flex-row p-[2px_32px_2px_24px] gap-[8px] rounded-[16px] bg-white">
                   <img className="w-[24px] h-[24px] text-[#F8B602]" src={searcher} alt="search"/>

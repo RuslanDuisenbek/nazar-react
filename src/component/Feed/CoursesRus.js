@@ -44,7 +44,7 @@ const CoursesRus = () => {
           <img className='rounded-full w-full' src={akcentImage}/>
         </div>
       </div>
-      <div className='w-[90%] h-auto flex justify-center items-center'>
+      <div className='w-[90%] h-auto flex justify-start items-center'>
         <iframe
           width="600"
           height="340"
@@ -55,19 +55,33 @@ const CoursesRus = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
+      <div className='mb-14'>
         <text className='font-poppins font-bold text-[140%] leading-[48px] tracking-[0%]'>📌 Записывайтесь на пробный урок прямо сейчас и начните говорить по-русски!</text>
       </div>
-      <div className='flex flex-row justify-around items-center w-full'>
-        <div className='flex flex-col'>
-          <text className='font-poppins font-bold text-[130%] leading-[48px] tracking-[0%] text-red-500'>
+      <div className="flex flex-row justify-between items-center w-full bg-white opacity-0">
+        <div className="flex flex-col">
+          <text className="font-poppins font-bold text-[130%] leading-[48px] tracking-[0%] text-red-500">
             от 2290тг/мес
           </text>
           <text className='<p class="font-poppins font-normal text-[120%] leading-[48px] tracking-[0%]'>
             Рассрочка на 24 месяцев
           </text>
         </div>
-        <div className='bg-[#1E50A0] flex justify-center items-center rounded-[8px] w-[20%] cursor-pointer'>
+        <div className="bg-[#1E50A0] flex justify-center items-center rounded-[8px] w-[20%] cursor-pointer">
+          <text className="font-poppins font-bold text-[90%] leading-[48px] tracking-[0%] text-white">Записаться</text>
+        </div>
+      </div>
+      <div
+        className="fixed bottom-0 right-0 w-3/4 bg-white flex flex-row justify-between items-center p-4 shadow-md z-50">
+        <div className="flex flex-col">
+          <text className="font-poppins font-bold text-[130%] leading-[48px] tracking-[0%] text-red-500">
+            от 2290тг/мес
+          </text>
+          <text className='<p class="font-poppins font-normal text-[120%] leading-[48px] tracking-[0%]'>
+            Рассрочка на 24 месяцев
+          </text>
+        </div>
+        <div className="bg-[#1E50A0] flex justify-center items-center rounded-[8px] w-[20%] cursor-pointer">
           <text className='font-poppins font-bold text-[90%] leading-[48px] tracking-[0%] text-white'>Записаться</text>
         </div>
       </div>

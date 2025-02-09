@@ -19,16 +19,16 @@ export default function Changepassword({setChangePassword}){
                     </text>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-10'>
-                    <input placeholder='Старый пароль'
+                    <input placeholder='  Старый пароль'
                            className='w-[300px] h-[50px] rounded-[15.34px] border-[1.53px] border-[#0000001A] bg-[#FFFFFF]'/>
-                    <input placeholder='Старый пароль'
+                    <input placeholder='  Старый пароль'
                            className='w-[300px] h-[50px] rounded-[15.34px] border-[1.53px] border-[#0000001A] bg-[#FFFFFF]'/>
 
                     <div
                         className='w-[300px] h-[50px] rounded-[15.34px] border-[1.53px] border-[#0000001A] flex items-center bg-white'>
                         <input
                             type={isPasswordVisible ? 'text' : 'password'}
-                            placeholder='Новый пароль'
+                            placeholder='  Новый пароль'
                             className='w-full h-full rounded-[15.34px] pl-2'
                         />
                         <img
